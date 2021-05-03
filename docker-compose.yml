@@ -5,3 +5,7 @@ services:
     container_name: vue-docker
     ports:
       - 4000:3000
+    volumes:
+      - .:/vue-cli-todo-app
+    environment:
+      - NODE_ENV=development
